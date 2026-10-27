@@ -1,0 +1,106 @@
+{
+  "kind": "clock",
+  "id": "standard-24",
+  "name": "Standard 24-Hour Clock",
+  "repository": "Clock-Standard-24",
+  "defines": {
+    "INFILTRATR_TEMPORAL_DISPLAY_NAME": "\"Standard 24-Hour Clock\"",
+    "CONVENTIONAL_CLOCK_KIND": "24"
+  },
+  "entry": "resources/temporal/src/clocks/conventional-clock.c",
+  "build_dependencies": [],
+  "upstream_repository": "Infiltrator-Projects/Libraries",
+  "upstream_revision": "8d60662114e3052380f6f88ad3cacd9732ae7131",
+  "upstream_version": "1.19.78",
+  "source_copy_only": true,
+  "common_modified": false,
+  "files": [
+    {
+      "path": "include/infiltratr/temporal.h",
+      "source_path": "include/infiltratr/temporal.h",
+      "source_sha256": "bf212e14f7c553ce7b6f36c552ab696dcdedeebed3a61fe34b45b39881e3f539",
+      "copied_sha256": "bf212e14f7c553ce7b6f36c552ab696dcdedeebed3a61fe34b45b39881e3f539",
+      "selected_definitions": []
+    },
+    {
+      "path": "include/infiltratr/temporal_clock_resource.h",
+      "source_path": "include/infiltratr/temporal_clock_resource.h",
+      "source_sha256": "ea9f8fe70f59b7c7518668f5a12c4a1b8595da2fe61587f84e67fdb23c28671f",
+      "copied_sha256": "ea9f8fe70f59b7c7518668f5a12c4a1b8595da2fe61587f84e67fdb23c28671f",
+      "selected_definitions": [
+        "INFILTRATR_TEMPORAL_CLOCK_PROVIDER_ABI"
+      ]
+    },
+    {
+      "path": "include/infiltratr/temporal_resource.h",
+      "source_path": "include/infiltratr/temporal_resource.h",
+      "source_sha256": "7ce225d7b2c6721b7d56fc152f68c4c680f6a7d068db26a5942fe2f3b583512d",
+      "copied_sha256": "7ce225d7b2c6721b7d56fc152f68c4c680f6a7d068db26a5942fe2f3b583512d",
+      "selected_definitions": []
+    },
+    {
+      "path": "include/infiltratr/temporal_runtime.h",
+      "source_path": "include/infiltratr/temporal_runtime.h",
+      "source_sha256": "6b5c52a266b53b5ceaafe048532c282a7e96fe64c3a1381a13c35c161629ba67",
+      "copied_sha256": "6b5c52a266b53b5ceaafe048532c282a7e96fe64c3a1381a13c35c161629ba67",
+      "selected_definitions": [
+        "INFILTRATR_TEMPORAL_RESOURCE_METADATA_ABI"
+      ]
+    },
+    {
+      "path": "src/clocks/clock-civil.h",
+      "source_path": "resources/temporal/src/clocks/clock-civil.h",
+      "source_sha256": "f97a3f683360d1b77df5086c95993d6b36f2b94d9e1325a4878eb5802ebbdeeb",
+      "copied_sha256": "f97a3f683360d1b77df5086c95993d6b36f2b94d9e1325a4878eb5802ebbdeeb",
+      "selected_definitions": [
+        "CLOCK_CIVIL_DAY_US",
+        "CLOCK_CIVIL_SECOND_US",
+        "clock_civil_local_phase",
+        "clock_civil_modulo"
+      ]
+    },
+    {
+      "path": "src/provider.c",
+      "source_path": "resources/temporal/src/clocks/conventional-clock.c",
+      "source_sha256": "be001006c0831216a9da1ffbaee36ff46d4291ce2da01df6b58bc19a18b42645",
+      "copied_sha256": "54b1511b7d7877cbad14200533732e8da9a43277df0080ad6c33b3950de53fca",
+      "selected_definitions": [
+        "CLOCK_ID",
+        "EXPORT",
+        "SECOND_US",
+        "infiltratr_temporal_clock_provider_v1",
+        "infiltratr_temporal_resource_metadata_v1",
+        "metadata",
+        "next_tick",
+        "provider",
+        "render"
+      ]
+    },
+    {
+      "path": "exports.map",
+      "source_path": "resources/temporal/src/clocks/clock-resource.map",
+      "source_sha256": "9bf9b9889241eebe70cd530d26465d281465da79ea4bb633d67f8831036696af",
+      "copied_sha256": "9bf9b9889241eebe70cd530d26465d281465da79ea4bb633d67f8831036696af",
+      "selected_definitions": []
+    },
+    {
+      "path": "LICENSE",
+      "source_path": "LICENSE",
+      "source_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "copied_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "selected_definitions": []
+    }
+  ],
+  "copy_method": "Select this provider in the original conditional source, specialize private dispatch branches, retain reachable provider/helper definitions, and copy the transitive local headers. Original functions and data remain attributed to Common.",
+  "verification": {
+    "repository": "Clock-Standard-24",
+    "compared_observations": 608,
+    "retained_fixtures": 84,
+    "exports": [
+      "infiltratr_temporal_clock_provider_v1",
+      "infiltratr_temporal_resource_metadata_v1"
+    ],
+    "abi_identical": true,
+    "behaviour_identical": true
+  }
+}

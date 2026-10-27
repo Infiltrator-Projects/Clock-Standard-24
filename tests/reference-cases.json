@@ -1,0 +1,1466 @@
+[
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "07:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "19:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "06:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "07\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "19\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "06\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "07:59:05",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "19:59:05",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "06:59:05",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "07\n59\n05",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "19\n59\n05",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -9223372036854775808,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "06\n59\n05",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      -9223372036854775808,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      54776
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      -9223372036854775808,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      776
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "16:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "04:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "15:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "16\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "04\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "15\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "16:00:54",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "04:00:54",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "15:00:54",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "16\n00\n54",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "04\n00\n54",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      9223372036854775807,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "15\n00\n54",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      9223372036854775807,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      5225
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      9223372036854775807,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      225
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "10:59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "10\n59",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11:59:59",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:59:59",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "10:59:59",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11\n59\n59",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n59\n59",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      -1,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "10\n59\n59",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      -1,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      1
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      -1,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      1
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      0,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "11\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      0,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      60000
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      0,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      1000
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      946728000000000,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      946728000000000,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      60000
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      946728000000000,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      1000
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      -43200,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      0,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      39600,
+      false,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      -43200,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      0,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      39600,
+      false,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n00",
+      5
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      -43200,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      0,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      39600,
+      true,
+      false,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23:00:00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      -43200,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "00\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      0,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "12\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "clock_format",
+    "args": [
+      1793102400000000,
+      39600,
+      true,
+      true,
+      -36.4,
+      145.4,
+      null,
+      512
+    ],
+    "expected": [
+      true,
+      "23\n00\n00",
+      8
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      1793102400000000,
+      39600,
+      false,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      60000
+    ]
+  },
+  {
+    "op": "tick",
+    "args": [
+      1793102400000000,
+      39600,
+      true,
+      -36.4,
+      145.4
+    ],
+    "expected": [
+      true,
+      1000
+    ]
+  }
+]
