@@ -12,6 +12,7 @@ COMMON_BUILD_DIR := $(abspath $(BUILD_DIR))/common
 COMMON_ARCHIVE := $(COMMON_BUILD_DIR)/libinfiltratr-common.a
 DEPENDENCIES := 
 SOURCES := $(shell find src -type f -name '*.c' | LC_ALL=C sort)
+OBJECTS := $(patsubst src/%.c,$(BUILD_DIR)/obj/%.o,$(SOURCES))
 TARGET := $(BUILD_DIR)/$(RESOURCE_NAME).so
 ifneq ($(strip $(DEPENDENCIES)),)
 DEP_CFLAGS := $(shell $(PKG_CONFIG) --cflags $(DEPENDENCIES))
@@ -35,19 +36,24 @@ common-check:
 	@grep -qx "$(COMMON_VERSION)" common/VERSION
 	@if test -e common/.git; then git -C common rev-parse HEAD | grep -qx "$(COMMON_REVISION)"; fi
 	@test ! -d include/infiltratr || { echo "No copied Common headers permitted" >&2; exit 1; }
-$(COMMON_ARCHIVE): common-check
+$(COMMON_ARCHIVE): Makefile | common-check
 	@mkdir -p "$(COMMON_BUILD_DIR)"
 	$(MAKE) -C common CC="$(CC)" BUILD_DIR="$(COMMON_BUILD_DIR)" CFLAGS="$(CFLAGS) -Wno-missing-profile" all
+$(BUILD_DIR)/obj/%.o: src/%.c Makefile | common-check
+	@mkdir -p "$(@D)"
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(DEP_CFLAGS) -MMD -MP -c "$<" -o "$@"
 .PHONY: all check audit-authorities clean
-all: $(COMMON_ARCHIVE)
+all: $(TARGET)
+$(TARGET): $(OBJECTS) $(COMMON_ARCHIVE) exports.map Makefile
 	@mkdir -p "$(BUILD_DIR)"
-	$(CC) $(CPPFLAGS) $(CFLAGS) $(DEP_CFLAGS) -shared $(SOURCES) $(COMMON_ARCHIVE) \
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(DEP_CFLAGS) -shared $(OBJECTS) $(COMMON_ARCHIVE) \
 	    -Wl,--version-script=exports.map -Wl,-z,defs -Wl,--gc-sections \
 	    $(LDFLAGS) -o "$(TARGET)" $(LDLIBS)
-check: all
+check: $(TARGET)
 	bash common/clock-tools/check.sh "$(TARGET)"
-audit-authorities: all
+audit-authorities: $(TARGET)
 	bash common/clock-tools/check.sh "$(TARGET)" --authorities
+-include $(OBJECTS:.o=.d)
 clean:
 	rm -rf "$(BUILD_DIR)"
 
