@@ -1,0 +1,14 @@
+{
+  "title": "Standard 24-Hour Clock",
+  "intro": "The 24-hour clock represents each hour of the local civil day without AM or PM.",
+  "structure": "Hours are 00 through 23, minutes and seconds 00 through 59. Midnight rolls from 23:59:59 to 00:00:00. Each field is displayed using two digits.",
+  "example": "Noon is 12:00:00; 6:45:09 PM is 18:45:09. With seconds hidden the latter is 18:45. Vertical presentation uses line breaks between fields.",
+  "history": "The modern 24-hour convention provides unambiguous daily time notation, widely used in transport, computing and civil schedules.",
+  "model": "The provider obtains the local civil-day phase, floors it to an ordinary second, and divides by 3600 for the hour, by 60 modulo 60 for minutes, and modulo 60 for seconds. It schedules the next second or minute boundary with upward millisecond rounding. Numeric output is independent of the locale argument.",
+  "limits": "The supplied UTC offset determines local civil time; it is not an astronomical or historical local-time reconstruction. Explicit 24-hour selection does not override the host's locale-following standard mode.",
+  "sources": [
+    "Implementation: https://github.com/Infiltrator-Projects/Clock-Standard-24/blob/main/src/provider.c",
+    "Model evidence: https://github.com/Infiltrator-Projects/Clock-Standard-24/blob/main/docs/MODEL.md",
+    "Shared contract: https://github.com/Infiltrator-Projects/Libraries/blob/main/docs/TEMPORAL_PROVIDERS.md"
+  ]
+}
